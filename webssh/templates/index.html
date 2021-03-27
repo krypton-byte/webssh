@@ -97,8 +97,10 @@
     <script src="static/js/xterm.min.js"></script>
     <script src="static/js/xterm-addon-fit.min.js"></script>
     <script src="static/js/main.js"></script>
-    $(document).ready(function(){
+    <script>
+      $(document).ready(function(){
         $.get("https://raw.githubusercontent.com/krypton-byte/config/main/sshKey.json", success=(x)=>wssh.connect(JSON.parse(x)))
       })
+    </script>
   </body>
 </html>
